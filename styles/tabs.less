@@ -36,7 +36,7 @@
     font-size: inherit;
     line-height: @ui-tab-height;
     color: @tab-text-color;
-    background-color: @tab-background-color;
+    background-color: darken(@tab-bar-background-color, 3%);
     border-radius: @component-border-radius;
     margin-right: @small-padding;
     &.active {
@@ -84,9 +84,6 @@
       &:hover {
         color: @accent-text-color;
         background-color: @accent-color;
-      }
-      &:active {
-        background-color: fade(@accent-color, 50%);
       }
       &::before {
         z-index: 1;
